@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <Form name="Biodata_mhs" method="post" action="latihan.html">
+
+    </Form>
+   Name<input type="text" name="name" size="30" maxlength="20" placeholder=" isi nama">
+    prodi<select name="prodi">
+        <option value="Dkv">desain konmukasi visual</option>
+        <option value="Ti">Teknik Informatika</option>
+        <option value="Si">Sistem Imformasi</option>
+        <option value="TS">Teknik Sipil</option>
+    </select>
+    <br>
+    Jenis Kelamin <input type="radio" nama="jk" value
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Mahasiswa</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <fieldset>
+            <legend>Input Data Mahasiswa</legend>
+            <p>
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Nama lengkap...">
+            </p>
+            <p>
+                <label>NPM:</label>
+                <input type="text" name="npm" placeholder="Nomor Pokok Mahasiswa...">
+            </p>
+            <p>
+                <label>No. HP:</label>
+                <input type="text" name="hp" placeholder="Nomor Handphone...">
+            </p>
+            <p>
+                <label>Mata Kuliah:</label><br>
+                <input type="radio" name="matkul" value="Pemrograman Internet"> Pemrograman Internet<br>
+                <input type="radio" name="matkul" value="Sistem Operasi"> Sistem Operasi<br>
+                <input type="radio" name="matkul" value="Grafika Komputasi"> Grafika Komputasi<br>
+            </p>
+            <p>
+                <label>Jam Kuliah:</label>
+                <select name="jam">
+                    <option>-- Pilih Jam --</option>
+                    <option>Senin, 08.00 WIB</option>
+                    <option>Selasa, 11.00 WIB</option>
+                    <option>Rabu, 14.00 WIB</option>
+                </select>
+            </p>
+            <p>
+                <label>Saran/Komentar:</label><br>
+                <textarea name="saran" cols="30" rows="5" placeholder="Masukkan saran atau komentar..."></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Simpan">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
